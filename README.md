@@ -1,4 +1,4 @@
-# Awesome Agent Memory Benchmarks
+# Awesome Agent Memory Benchmark
 
 [中文](README.zh-CN.md) | English
 
