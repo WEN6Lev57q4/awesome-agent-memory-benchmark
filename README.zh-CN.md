@@ -1,8 +1,8 @@
-# Awesome Agent Memory Benchmarks
+# Awesome Agent Memory Benchmark
 
 中文 | [English](README.md)
 
-虽然通用 LLM 的 Agent 能力正在快速增强，但在具体业务场景中，Memory 的使用体验仍然是决定 Agent 能否稳定完成任务的关键。于是，做业务时自然绕不开几个问题：什么样的 Agent Memory System 才算好？应该如何评估它？现有 Agent Memory Benchmarks 又是如何构建的？本文试图回答这些问题：梳理近几年 Agent Memory Benchmark 的代表性工作，总结它们的评测目标、能力演进与数据构造方法。
+虽然通用 LLM 的 Agent 能力正在快速增强，但在具体业务场景中，Memory 的使用体验仍然是决定 Agent 能否稳定完成任务的关键。于是，做业务时自然绕不开几个问题：什么样的 Agent Memory System 才算好？应该如何评估它？现有 Agent Memory Benchmark 又是如何构建的？本文试图回答这些问题：梳理近几年 Agent Memory Benchmark 的代表性工作，总结它们的评测目标、能力演进与数据构造方法。
 
 这是一个整理 **LLM Agent 长期记忆 benchmark** 的双语资料库，覆盖从早期 session continuity、personal recall，到 longitudinal state tracking、implicit memory、multi-party memory 和 memory-to-action 的研究脉络。
 
