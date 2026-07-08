@@ -84,9 +84,11 @@
 7. 保留 speaker、timestamp、session id、topic、reply-to、state id、evidence id 等 metadata。
 8. 同时评估 answer accuracy、evidence recall、state accuracy、abstention accuracy、tool-parameter accuracy 和 state-level summary quality。
 
+回到文章开头的问题：什么样的 Agent Memory System 才算好？从这些 benchmark 可以看到，答案并不是“能存更多历史”或“能检索更长上下文”这么简单。一个好的 Agent Memory System 至少应该能在长期交互中保持 session 连续性，准确找回个人事实和事件，理解时间顺序和状态覆盖，识别隐式约束与抽象用户状态，在多人场景中区分状态归属，并在需要时把记忆转化为回答或行动。
+
 ## Benchmark 列表
 
-回到文章开头的问题：什么样的 Agent Memory System 才算好？从这些 benchmark 可以看到，答案并不是“能存更多历史”或“能检索更长上下文”这么简单。一个好的 Agent Memory System 至少应该能在长期交互中保持 session 连续性，准确找回个人事实和事件，理解时间顺序和状态覆盖，识别隐式约束与抽象用户状态，在多人场景中区分状态归属，并在需要时把记忆转化为回答或行动。下面的 benchmark 列表按研究脉络梳理每篇工作的评测目标、构造方式和主要价值。
+下面的 benchmark 列表按研究脉络梳理每篇工作的评测目标、构造方式和主要价值。
 
 ### MSC: Beyond Goldfish Memory
 
