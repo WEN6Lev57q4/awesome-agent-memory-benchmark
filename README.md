@@ -84,9 +84,10 @@ If you are building a new agent memory benchmark, the most reusable recipe is:
 7. Keep structured metadata such as speaker, timestamp, session id, topic, reply-to, state id, and evidence id.
 8. Evaluate answer accuracy, evidence recall, state accuracy, abstention accuracy, tool-parameter accuracy, and state-level summary quality.
 
-## Benchmarks
+Returning to the questions raised at the beginning: What makes a good Agent Memory System? The answer from these benchmarks is not simply "storing more history" or "retrieving from a longer context." A strong Agent Memory System should maintain session continuity over long-term interaction, retrieve personal facts and events accurately, understand temporal order and state overwrite, recognize implicit constraints and abstract user states, distinguish state ownership in multi-party settings, and convert memory into responses or actions when needed. 
 
-Returning to the questions raised at the beginning: What makes a good Agent Memory System? The answer from these benchmarks is not simply "storing more history" or "retrieving from a longer context." A strong Agent Memory System should maintain session continuity over long-term interaction, retrieve personal facts and events accurately, understand temporal order and state overwrite, recognize implicit constraints and abstract user states, distinguish state ownership in multi-party settings, and convert memory into responses or actions when needed. The list below summarizes the evaluation goal, construction style, and main value of each benchmark along this research trajectory.
+## Benchmarks
+The list below summarizes the evaluation goal, construction style, and main value of each benchmark along this research trajectory.
 
 ### MSC: Beyond Goldfish Memory
 
