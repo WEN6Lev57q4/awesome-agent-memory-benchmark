@@ -33,7 +33,7 @@ From the perspective of research questions, the development of Agent Memory Benc
 | Long-context and cross-session reasoning | Can the agent reason over long histories with multi-hop, temporal, and unanswerable questions? | LoCoMo, LongMemEval |
 | Dynamic state maintenance | Can the agent handle state changes, conflicts, overwrites, and forgetting? | LongMemEval, MemoryAgentBench, EvoEmo |
 | Implicit and abstract state | Can the agent infer goals, preferences, emotions, or profiles from indirect cues? | LoCoMo-Plus, MemBench, EvoEmo |
-| Context-conditioned state use | Can the agent use memory according to speaker, task, group context, or tool schema? | GroupMemBench, Mem2ActBench |
+| Context-conditioned state use | Can the agent use memory according to speaker, task, group context, or tool schema? | GroupMemBench, Mem2ActBench, EmbodiedMemory-Bench |
 
 ## Capability Taxonomy
 
@@ -47,7 +47,7 @@ If the roadmap is a timeline, the taxonomy below is a capability-level view. A s
 | Implicit constraint application | Whether unstated goals or constraints can guide future responses | LoCoMo-Plus |
 | State abstraction | How to infer preferences, emotions, and profiles from events | MemBench, EvoEmo, PerLTQA |
 | Speaker-specific state | Whose state, belief, task, or preference should be used | GroupMemBench |
-| Memory-to-action | Whether memory can be converted into tool parameters or actions | Mem2ActBench |
+| Memory-to-action | Whether memory can be converted into tool parameters or actions | Mem2ActBench, EmbodiedMemory-Bench |
 
 ## Useful Benchmark Construction Patterns
 
@@ -226,6 +226,19 @@ Why it matters: It moves memory evaluation from answering to acting. The benchma
 GroupMemBench evaluates memory in group conversations. The agent must retrieve and reason over states that belong to specific speakers, tasks, threads, and group contexts.
 
 Why it matters: It shows that group memory is not just more dialogue. The central challenge is speaker-grounded belief tracking and avoiding state misattribution.
+
+### EmbodiedMemory-Bench
+
+- Year: 2026
+- Venue: arXiv preprint
+- Paper: https://arxiv.org/abs/2609.28236
+- Code: https://github.com/ZJU-OmniAI/Embodied-Omni/tree/main/embodied_memory
+- Data: https://huggingface.co/datasets/lzLiang/EmbodiedMemoryBench
+- Focus: memory-to-action and dynamic world-state tracking in embodied interaction
+
+EmbodiedMemory-Bench contains 2,554 interactive AI2-THOR episodes across visual recall, dynamic tracking, interaction outcomes, and experience generalization. Agents build and update memory from earlier observations and actions, then use it to execute a later task.
+
+Why it matters: It extends memory evaluation to simulator-grounded actions, measuring task success and memory-augmented interaction efficiency rather than recall accuracy alone.
 
 ## Citation Note
 

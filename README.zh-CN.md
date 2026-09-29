@@ -47,7 +47,7 @@
 | Implicit constraint application | 没明说的目标或约束，未来能不能被应用 | LoCoMo-Plus |
 | State abstraction | 如何从事件中归纳偏好、情绪和画像 | MemBench、EvoEmo、PerLTQA |
 | Speaker-specific state | 应该使用谁的状态、信念、任务或偏好 | GroupMemBench |
-| Memory-to-action | 记忆能不能转成工具参数或行动 | Mem2ActBench |
+| Memory-to-action | 记忆能不能转成工具参数或行动 | Mem2ActBench, EmbodiedMemory-Bench |
 
 ## 有价值的 Benchmark 构造方法
 
@@ -227,6 +227,19 @@ Mem2ActBench 要求 agent 执行工具调用，其中当前 query 省略了关�
 GroupMemBench 评估群聊中的 agent memory。Agent 必须检索和推理属于特定 speaker、任务、线程和群体上下文的状态。
 
 价值：GroupMemBench 说明 group memory 不是更长的 dialogue，而是 speaker-grounded belief tracking。核心难点是避免把 Alice 的状态错用到 Bob 身上。
+
+### EmbodiedMemory-Bench
+
+- 年份：2026
+- 发表状态：arXiv 预印本
+- 论文：https://arxiv.org/abs/2609.28236
+- 代码：https://github.com/ZJU-OmniAI/Embodied-Omni/tree/main/embodied_memory
+- 数据：https://huggingface.co/datasets/lzLiang/EmbodiedMemoryBench
+- 关注点：具身交互中的记忆到行动与动态世界状态追踪
+
+EmbodiedMemory-Bench 包含 2,554 个 AI2-THOR 交互回合，覆盖视觉细节记忆、动态状态追踪、交互结果记忆与经验泛化。智能体需要从前期观测和行动中建立、更新记忆，再据此执行后续任务。
+
+价值：将记忆评测扩展到仿真环境中的实际行动，以任务成功率和记忆增强交互效率评价记忆使用，而不只评测事实回忆准确率。
 
 ## 引用说明
 
